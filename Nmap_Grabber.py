@@ -1,7 +1,7 @@
 import pprint
 pp = pprint.PrettyPrinter(indent=4)
-report=input('Which file is target scan in:?\n')
-target_ip=input('Which target it report needed on\n')
+report=input('Name of the file of Nmap Scan:\n')
+target_ip=input('Which target is the report needed on\n')
 
 
 with open(report,'r') as f:
