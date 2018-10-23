@@ -3,27 +3,6 @@ pp = pprint.PrettyPrinter(indent=4)
 report=input('Which file is target scan in:?\n')
 target_ip=input('Which target it report needed on\n')
 
-print('''
-                       ---                                     
-                    -        --                             
-                --( /     \ )XXXXXXXXXXXXX                   
-            --XXX(   O   O  )XXXXXXXXXXXXXXX-              
-           /XXX(       U     )        XXXXXXX\               
-         /XXXXX(              )--   XXXXXXXXXXX\             
-        /XXXXX/ (      O     )   XXXXXX   \XXXXX\
-        XXXXX/   /            XXXXXX   \   \XXXXX----        
-        XXXXXX  /          XXXXXX         \  ----  -         
----     XXX  /          XXXXXX      \           ---        
-  --  --  /      /\  XXXXXX            /     ---=         
-    -        /    XXXXXX              '--- XXXXXX         
-      --\/XXX\ XXXXXX                      /XXXXX         
-        \XXXXXXXXX                        /XXXXX/
-         \XXXXXX                         /XXXXX/         
-           \XXXXX--  /                -- XXXX/       
-            --XXXXXXX---------------  XXXXX--         
-               \XXXXXXXXXXXXXXXXXXXXXXXX-            
-                 --XXXXXXXXXXXXXXXXXX-  
-    ''')
 
 with open(report,'r') as f:
     for line in f.readlines():
