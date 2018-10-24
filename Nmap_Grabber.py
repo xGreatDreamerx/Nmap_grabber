@@ -1,4 +1,4 @@
-#
+#Python3.7.x
 #
 #
 #
@@ -10,9 +10,11 @@ target_ip = "10.10.100.1"
 begins = "Nmap scan report for"
 
 fhand = open(report,'r')
-for line in fhand:
+for num1,line in enumerate(fhand, 1):
     line = line.rstrip()
     if line.startswith(begins) and line.endswith(target_ip):
-        print(line)
         
+        print(line)
+        print(num1)
+
            
