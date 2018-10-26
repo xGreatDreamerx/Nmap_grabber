@@ -6,10 +6,10 @@ import linecache
 #target_ip=input('Which target is the report needed on?:\n')
 
 report = "ScanTest.txt"
-target_ip = "10.10.100.2"
+target_ip = "10.10.100.1"
 begins = "Nmap scan report for"
 fhand = open(report,'r')
-beginsend = "Network Distance:"
+beginsend = "\n"
 
 for num1,line1 in enumerate(fhand, 1):
     line1 = line1.rstrip()
@@ -18,7 +18,7 @@ for num1,line1 in enumerate(fhand, 1):
         print(line1)
         break
 for num2,line2 in enumerate(fhand, 1):
-    line2 = line2.rstrip()
+    
     if line2.startswith(beginsend) and num2 > num1:
         print(num2)
         print(line2)
