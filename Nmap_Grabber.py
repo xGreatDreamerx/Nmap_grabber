@@ -14,18 +14,18 @@ beginsend = "\n"
 for num1,line1 in enumerate(fhand, 1):
     line1 = line1.rstrip()
     if line1.startswith(begins) and line1.endswith(target_ip):
-        print(num1)
-        print(line1)
+        #print(num1)
+        #print(line1)
         break
 for num2,line2 in enumerate(fhand, 1):
     
-    if line2.startswith(beginsend) and num2 > num1:
-        print(num2)
-        print(line2)
+    if line2.startswith(beginsend):
+        #print(num2)
+        #print(line2)
         break
 with open('ScanTest.txt') as f:
     linecount = sum(1 for line in f)
     
-for i in range(num1,num2):
+for i in range(num1,num1+num2):
     
     print(linecache.getline("ScanTest.txt", i))
